@@ -1,0 +1,7 @@
+payload:
+# > ウマ娘(JP)
+# > PassWall Need Origin JP ip
+# > behavior: classical
+  - DOMAIN,prd-storage-umamusume.akamaized.net
+  - DOMAIN-SUFFIX,cygames.jp
+  - DOMAIN-KEYWORD,umamusume

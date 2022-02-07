@@ -1,0 +1,6 @@
+payload:
+# > プリンセスコネクト Redive(JP)
+# > PassWall Need Origin JP ip
+# > behavior: classical
+  - DOMAIN-KEYWORD,priconne-redive
+  - DOMAIN-KEYWORD,cygames

@@ -1,0 +1,9 @@
+payload:
+# > プロジェクトセカイ カラフルステージ！ feat. 初音ミク
+# > behavior: classical
+# > China DIRECT OK
+  - DOMAIN-KEYWORD,colorfulpalette
+  - DOMAIN,production-game-api.sekai.colorfulpalette.org
+  - DOMAIN,assetbundle-info.sekai.colorfulpalette.org
+# for Download game data
+  - DOMAIN,assetbundle.sekai.colorfulpalette.org

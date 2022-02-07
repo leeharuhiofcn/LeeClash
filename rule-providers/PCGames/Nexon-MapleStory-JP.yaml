@@ -1,0 +1,17 @@
+payload:
+# > nexon jp
+  - DOMAIN-SUFFIX,static.nexon.co.jp
+  - DOMAIN-SUFFIX,config.livelog.nexon.com
+  - DOMAIN-SUFFIX,jp.livelog.nexon.com
+  - DOMAIN-SUFFIX,maplestory.nexon.co.jp
+  - DOMAIN-SUFFIX,nexon.co.jp
+  - DOMAIN-SUFFIX,nexon.com
+# > maplestory
+  - DOMAIN-KEYWORD,mapleStory
+# > Reboot channel 5-10
+  - IP-CIDR,18.182.217.0/24
+# > Reboot PointShop
+
+# > LastMatch
+  - PROCESS-NAME,MapleStory.exe
+  

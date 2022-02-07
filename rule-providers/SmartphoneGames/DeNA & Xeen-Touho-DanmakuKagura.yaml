@@ -1,0 +1,11 @@
+payload:
+# > DeNA & Xeen 東方ダンマクカグラ
+# > behavior: classical
+  - DOMAIN-KEYWORD,danmakujp-server
+  - DOMAIN-KEYWORD,danmakujp4-v1
+  - DOMAIN-KEYWORD,assets-danmakujp
+  - DOMAIN-KEYWORD,danmakujp
+  - DOMAIN-KEYWORD,danmakujp4-v1
+  - DOMAIN-KEYWORD,danmakujp4-v2
+  - DOMAIN-KEYWORD,danmakujp4-v3
+  - DOMAIN-KEYWORD,akamai
