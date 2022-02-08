@@ -1,10 +1,9 @@
 #以下放置于 prepend-rules，注意对齐
-# LeeSet
-- RULE-SET,google,DataSaveMode
-- RULE-SET,gfw,DataSaveMode
+- RULE-SET,Google,DataSaveMode
+- RULE-SET,GFW,DataSaveMode
 
 # Pc Game-Origin JP IP
-- RULE-SET,NEXON,JP-PROXY
+- RULE-SET,NEXON-JMS,JP-PROXY
 - RULE-SET,NCSOFT,JP-PROXY
 - RULE-SET,HANGAME,JP-PROXY
 #Steam

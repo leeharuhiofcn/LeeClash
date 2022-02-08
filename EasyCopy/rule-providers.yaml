@@ -3,53 +3,109 @@ reject: # 广告域名列表
   type: file
   behavior: domain
   path: ./ruleset/reject.yaml
-google: # Pass wall
+Google: # Pass wall
   type: http
   behavior: domain
   url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
-  path: ./ruleset/google.yaml
+  path: ./ruleset/Google.yaml
   interval: 86400
-gfw: # Pass wall
-  type: http
-  behavior: domain
-  url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
-  path: ./ruleset/gfw.yaml
-  interval: 86400
-China-APP: # 需要直连的常见软件列表
-  type: http
-  behavior: classical
-  url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
-  path: ./ruleset/China-APP.yaml
-  interval: 86400
-maplestory-jp: #MapeleStory Nexon.co.jp
-  type: file
-  behavior: classical
-  path: ./ruleset/MapleStory_JP.yaml
-theaterdays: #idol m@ster theaterdays
-  type: file
-  behavior: classical
-  path: ./ruleset/theaterdays.yaml
+
+# PC Games
 Steam: # Steam
-  type: file
+  type: http
   behavior: classical
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/PCGames/Steam.yaml"
   path: ./ruleset/Steam.yaml
+  interval: 86400
+NEXON-JMS:
+  type: http
+  behavior: classical
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/PCGames/Nexon-MapleStory-JP.yaml"
+  path: ./ruleset/NEXON-JMS.yaml
+  interval: 86400
+
+# SNS
 Discord: # Discord
-  type: file
+  type: http
   behavior: classical
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/SNS/Discord.yaml"
   path: ./ruleset/Discord.yaml
-Lee-rule-jp: # LeeHaruki List
-  type: file
-  behavior: classical
-  path: ./ruleset/LEE_rule_JP.yaml
+  interval: 86400
+  
 telegramcidr: # Telegram 使用的 IP 地址列表
   type: http
   behavior: ipcidr
   url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
   path: ./ruleset/telegramcidr.yaml
   interval: 86400
+
+# SmartPhone Games
+# PCRDive
+PCRDive:
+  type: http
+  behavior: classical
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/SmartphoneGames/Cygames-PrincessConnectReDive-JP.yaml"
+  path: ./ruleset/PrincessConnectReDive-JP.yaml
+  interval: 86400
+# ウマ娘
+UMA:
+  type: http
+  behavior: classical
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/SmartphoneGames/Cygames-Umamusume-JP.yaml"
+  path: ./ruleset/Umamusume-JP.yaml
+  interval: 86400
+# アイドルマスター ミリオンライブ シアターデイズ
+iM@S-Theaterdays:
+  type: http
+  behavior: classical
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/SmartphoneGames/BanDai-iM%40s-Theaterdays.yaml"
+  path: ./ruleset/iM@S-Theaterdays.yaml
+  interval: 86400
+# 東方弾幕
+Touhou-Danmaku:
+  type: http
+  behavior: classical
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/SmartphoneGames/DeNA%20%26%20Xeen-Touho-DanmakuKagura.yaml"
+  path: ./ruleset/Touhou-Danmaku.yaml
+  interval: 86400
+# Amazon CloudFront
+CloudFront:
+  type: http
+  behavior: classical
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/SmartphoneGames/Amazon-CloudFront.yaml"
+  path: ./ruleset/CloudFront.yaml
+  interval: 86400
+# セガ 初音ミク
+SEGA-Miku:
+  type: http
+  behavior: classical
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/SmartphoneGames/ColorfulPalette-SEGA-Miku.yaml"
+  path: ./ruleset/SEGA-Miku.yaml
+  interval: 86400
+# JP-SHOP
+JP-SHOP:
+  type: http
+  behavior: classical
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Shopping/JP-SHOP.yaml.yaml"
+  path: ./ruleset/JP-SHOP.yaml
+  interval: 86400
+
+GFW: # Pass wall
+  type: http
+  behavior: domain
+  url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
+  path: ./ruleset/GFW.yaml
+  interval: 86400
 proxy: # 代理域名列表
   type: http
   behavior: domain
   url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
   path: ./ruleset/proxy.yaml
+  interval: 86400
+# 需要直连的常见软件列表 
+China-APP: 
+  type: http
+  behavior: classical
+  url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
+  path: ./ruleset/China-APP.yaml
   interval: 86400
