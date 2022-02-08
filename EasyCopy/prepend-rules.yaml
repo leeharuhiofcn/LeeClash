@@ -1,0 +1,27 @@
+#以下放置于 prepend-rules，注意对齐
+# LeeSet
+- RULE-SET,google,DataSaveMode
+- RULE-SET,gfw,DataSaveMode
+
+# Pc Game-Origin JP IP
+- RULE-SET,NEXON,JP-PROXY
+- RULE-SET,NCSOFT,JP-PROXY
+- RULE-SET,HANGAME,JP-PROXY
+#Steam
+- RULE-SET,Steam,Steam
+# SNS
+- RULE-SET,Discord,SNS
+- RULE-SET,telegramcidr,SNS
+# SHOP
+- RULE-SET,JP-SHOP,JP-PROXY
+# SmartPhone Game-Origin JP IP
+- RULE-SET,PCRDive,Cygames
+- RULE-SET,UMA,Cygames
+# SmartPhone Game-FackIP(HK,SG)
+- RULE-SET,iM@S-Theaterdays,
+- RULE-SET,Touhou-Danmaku,
+- RULE-SET,CloudFront,DIRECT
+- RULE-SET,SEGA-Miku,DIRECT
+#China
+- RULE-SET,reject,AD-Block
+- RULE-SET,China-APP,DIRECT

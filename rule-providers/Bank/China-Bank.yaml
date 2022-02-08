@@ -1,0 +1,5 @@
+payload:
+# > ICBC
+  - DOMAIN-SUFFIX,icbc.com.cn
+# > BOC
+  - DOMAIN-SUFFIX,boc.cn

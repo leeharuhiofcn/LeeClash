@@ -1,0 +1,14 @@
+payload:
+# ヤフオク
+  - DOMAIN-SUFFIX,yahoo.co.jp
+# メルカリ
+  - DOMAIN-SUFFIX,jp.mercari.com
+  - DOMAIN-KEYWORD,mercari
+# アマゾン
+  - DOMAIN-SUFFIX,amazon.co.jp
+# 駿河屋
+  - DOMAIN-SUFFIX,suruga-ya.jp
+# ツタヤ
+  - DOMAIN-SUFFIX,tsutaya.co.jp
+# ソニー
+  - DOMAIN-SUFFIX,sony.jp
