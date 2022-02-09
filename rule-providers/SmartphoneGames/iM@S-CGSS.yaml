@@ -1,0 +1,5 @@
+payload:
+# CGSS
+  - DOMAIN-SUFFIX,starlight-stage.jp
+# Download Data
+  - DOMAIN-SUFFIX,asset-starlight-stage.akamaized.net

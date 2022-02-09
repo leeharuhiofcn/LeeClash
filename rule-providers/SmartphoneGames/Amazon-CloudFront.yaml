@@ -2,3 +2,4 @@ payload:
 # > behavior: classical
 # > Amazon CloudFront
   - DOMAIN-SUFFIX,cloudfront.net
+  - DOMAIN-SUFFIX,asset-starlight-stage.akamaized.net
