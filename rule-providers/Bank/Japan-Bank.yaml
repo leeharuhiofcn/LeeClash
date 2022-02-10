@@ -1,6 +1,6 @@
 payload:
 # > 楽天銀行
-  - DOMAIN-SUFFIX,rakuten-card
+  - DOMAIN-SUFFIX,rakuten-card.co.jp
   - DOMAIN-SUFFIX,jp.rakuten-static.com
   - DOMAIN-SUFFIX,card.jp.rakuten-static.com
   - DOMAIN-SUFFIX,rakuten.co.jp
@@ -15,3 +15,5 @@ payload:
   - DOMAIN-SUFFIX,jp-bank.japanpost.jp
 # > 三菱UFJ
   - DOMAIN-SUFFIX,bk.mufg.jp
+# > みずほ銀行
+  - DOMAIN-SUFFIX,mizuhobank.co.jp
