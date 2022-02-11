@@ -1,0 +1,9 @@
+payload:
+# > behavior: classical
+# > Amazon CloudFront
+  - DOMAIN-SUFFIX,cloudfront.net
+# メディアとソフトウェアの配信
+  - DOMAIN,asset-starlight-stage.akamaized.net
+  - DOMAIN,prd-storage-umamusume.akamaized.net
+  - DOMAIN,prd-priconne-redive.akamaized.net
+  - DOMAIN-SUFFIX,akamai.net

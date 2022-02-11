@@ -1,10 +1,11 @@
 payload:
 # > 楽天銀行
   - DOMAIN-SUFFIX,rakuten-card.co.jp
-  - DOMAIN-SUFFIX,jp.rakuten-static.com
-  - DOMAIN-SUFFIX,card.jp.rakuten-static.com
+  - DOMAIN-SUFFIX,member.id.rakuten.co.jp
+  - DOMAIN-SUFFIX,rakuten-static.com
   - DOMAIN-SUFFIX,rakuten.co.jp
   - DOMAIN-SUFFIX,rakuten.com
+  - DOMAIN-KEYWORD,rakuten
 # > 三井住友銀行
   - DOMAIN-SUFFIX,smbc.co.jp
   - DOMAIN-SUFFIX,smbc-card.com

@@ -1,0 +1,4 @@
+payload:
+# behavior: classical
+  - DOMAIN-SUFFIX,weixin.qq.com
+  - DOMAIN-SUFFIX,qq.com

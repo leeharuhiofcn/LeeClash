@@ -4,7 +4,6 @@ payload:
   - DOMAIN-SUFFIX,danmakujp-server.com
   - DOMAIN-SUFFIX,assets-danmakujp.cdn-dena.com
   - DOMAIN-SUFFIX,danmakujp4-v1.lcx.tokyo
-  - DOMAIN-SUFFIX,a1790.dscd.akamai.net
   - DOMAIN-KEYWORD,danmakujp4-v1
   - DOMAIN-KEYWORD,assets-danmakujp
   - DOMAIN-KEYWORD,danmakujp
