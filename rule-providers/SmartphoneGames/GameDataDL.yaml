@@ -1,9 +1,23 @@
 payload:
 # > behavior: classical
 # > Amazon CloudFront
-  - DOMAIN-SUFFIX,cloudfront.net
-# メディアとソフトウェアの配信
+# - DOMAIN-SUFFIX,cloudfront.net
+
+#MLTD
+  - DOMAIN,d2sf4w9bkv485c.cloudfront.net
+#CGSS
   - DOMAIN,asset-starlight-stage.akamaized.net
+  - DOMAIN,a1915.dscw7.akamai.net
+#Umamusume
   - DOMAIN,prd-storage-umamusume.akamaized.net
-  - DOMAIN,prd-priconne-redive.akamaized.net
-  - DOMAIN-SUFFIX,akamai.net
+#PCR
+  - DOMAIN,a1902.dscw7.akamai.net
+#TouHou
+  - DOMAIN,a1790.dscd.akamai.net
+  - DOMAIN,assets-danmakujp.cdn-dena.com
+#Mach akamai
+#  - DOMAIN-SUFFIX,akamai.net
+#  - DOMAIN-SUFFIX,akamaiedge.net
+#  - DOMAIN-SUFFIX,akamaihd.net
+#  - DOMAIN-SUFFIX,akamaistream.net
+#  - DOMAIN-SUFFIX,akamaized.net

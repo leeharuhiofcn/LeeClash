@@ -1,9 +1,11 @@
 payload:
 # > DeNA & Xeen 東方ダンマクカグラ
 # > behavior: classical
-  - DOMAIN-SUFFIX,danmakujp-server.com
-  - DOMAIN-SUFFIX,assets-danmakujp.cdn-dena.com
-  - DOMAIN-SUFFIX,danmakujp4-v1.lcx.tokyo
-  - DOMAIN-KEYWORD,danmakujp4-v1
-  - DOMAIN-KEYWORD,assets-danmakujp
+# Main
+  - DOMAIN,danmakujp4-v1.lcx.tokyo
+# api
+  - DOMAIN,player-api-production.danmakujp-server.com
+# DL
+# - DOMAIN,assets-danmakujp.cdn-dena.com
+# Match
   - DOMAIN-KEYWORD,danmakujp

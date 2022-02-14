@@ -4,3 +4,4 @@ payload:
 # > behavior: classical
   - DOMAIN-SUFFIX,cygames.jp
   - DOMAIN-KEYWORD,umamusume
+  - DOMAIN-KEYWORD,cygames

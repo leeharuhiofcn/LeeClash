@@ -1,10 +1,15 @@
 payload:
-# > プリンセスコネクト Redive(JP)
+# > プリンセスコネクト ReDive(JP)
 # > PassWall Need Origin JP ip
 # > behavior: classical
-  - DOMAIN,api-priconne-redive.cygames.jp
+# Login
   - DOMAIN,api-common01.cygames.jp
+# info
+  - DOMAIN,app-info.priconne-redive.jp
+# Main
+  - DOMAIN,prd-priconne-redive.akamaized.net
+  - DOMAIN,api-priconne-redive.cygames.jp
+#cygames
   - DOMAIN-SUFFIX,cygames.jp
   - DOMAIN-KEYWORD,priconne-redive
   - DOMAIN-KEYWORD,cygames
-

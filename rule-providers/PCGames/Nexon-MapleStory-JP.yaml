@@ -1,9 +1,8 @@
 payload:
 # > nexon jp
-  - DOMAIN-SUFFIX,static.nexon.co.jp
-  - DOMAIN-SUFFIX,config.livelog.nexon.com
-  - DOMAIN-SUFFIX,jp.livelog.nexon.com
-  - DOMAIN-SUFFIX,maplestory.nexon.co.jp
+  - DOMAIN,static.nexon.co.jp
+  - DOMAIN,config.livelog.nexon.com
+  - DOMAIN,jp.livelog.nexon.com
   - DOMAIN-SUFFIX,nexon.co.jp
   - DOMAIN-SUFFIX,nexon.com
 # > maplestory
