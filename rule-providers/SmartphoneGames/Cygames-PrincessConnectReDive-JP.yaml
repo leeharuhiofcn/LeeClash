@@ -7,7 +7,6 @@ payload:
 # info
   - DOMAIN,app-info.priconne-redive.jp
 # Main
-  - DOMAIN-SUFFIX,prd-priconne-redive.akamaized.net
   - DOMAIN,api-priconne-redive.cygames.jp
 # Akamai Technologies
   - IP-CIDR,23.59.209.33/32
