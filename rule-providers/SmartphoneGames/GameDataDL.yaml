@@ -12,6 +12,7 @@ payload:
   - DOMAIN,prd-storage-umamusume.akamaized.net
 #PCR 在主页面可下载数据
   - DOMAIN,a1902.dscw7.akamai.net
+  - DOMAIN,prd-priconne-redive.akamaized.net
 #TouHou
   - DOMAIN,a1790.dscd.akamai.net
   - DOMAIN,assets-danmakujp.cdn-dena.com
