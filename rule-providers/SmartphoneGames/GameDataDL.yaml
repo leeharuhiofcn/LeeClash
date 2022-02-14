@@ -10,7 +10,7 @@ payload:
   - DOMAIN,a1915.dscw7.akamai.net
 #Umamusume
   - DOMAIN,prd-storage-umamusume.akamaized.net
-#PCR
+#PCR 在主页面可下载数据
   - DOMAIN,a1902.dscw7.akamai.net
 #TouHou
   - DOMAIN,a1790.dscd.akamai.net
