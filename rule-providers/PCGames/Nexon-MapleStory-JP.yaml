@@ -5,6 +5,7 @@ payload:
   - DOMAIN,jp.livelog.nexon.com
   - DOMAIN-SUFFIX,nexon.co.jp
   - DOMAIN-SUFFIX,nexon.com
+  - DOMAIN-SUFFIX,nexoncdn.co.kr
 # > maplestory
   - DOMAIN-KEYWORD,mapleStory
 # > Reboot channel 5-10
