@@ -1,0 +1,14 @@
+payload:
+  # 注意：以下是个人黑名单，如果有自己使用的，请勿把本列表加入至REJECT
+  - DOMAIN-SUFFIX,360.cn
+  - DOMAIN-SUFFIX,2345.cn
+  - DOMAIN-SUFFIX,7654.com
+  - DOMAIN-SUFFIX,baofeng.com
+  - DOMAIN-SUFFIX,ijinshan.com
+  - DOMAIN-SUFFIX,wps.cn
+  - DOMAIN-SUFFIX,uc.cn
+  - DOMAIN-SUFFIX,kingsoft.com
+  - DOMAIN-SUFFIX,kuaizip.com
+  - DOMAIN-SUFFIX,kuwo.cn
+  - DOMAIN-SUFFIX,pptv.com
+  - DOMAIN-SUFFIX,flash.cn
