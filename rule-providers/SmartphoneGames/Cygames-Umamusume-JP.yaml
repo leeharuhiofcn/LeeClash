@@ -2,7 +2,11 @@ payload:
 # > ウマ娘(JP)
 # > PassWall Need Origin JP ip
 # > behavior: classical
+# Login
   - DOMAIN,api-common01.cygames.jp
+# Main
   - DOMAIN,api-umamusume.cygames.jp
+  - DOMAIN,prd-info-umamusume.akamaized.net
+#cygames
   - DOMAIN-SUFFIX,cygames.jp
   - DOMAIN-KEYWORD,umamusume

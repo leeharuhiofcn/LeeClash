@@ -9,6 +9,7 @@ payload:
   - DOMAIN,asset-starlight-stage.akamaized.net
   - DOMAIN,a1915.dscw7.akamai.net
 #Umamusume
+  - DOMAIN,a1991.dscw7.akamai.net
   - DOMAIN,prd-storage-umamusume.akamaized.net
 #PCR 在主页面可下载数据
   - DOMAIN,a1902.dscw7.akamai.net
