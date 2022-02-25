@@ -5,17 +5,18 @@ payload:
   - DOMAIN-SUFFIX,nexoncdn.co.kr
 # Login
   - DST-PORT,8484
-# Chanel
+# Channel port
   - DST-PORT,8585
   - DST-PORT,8586
-# Shop
+# PointShop port
   - DST-PORT,8787
+# Reboot channel
   - IP-CIDR,18.182.188.187/32
   - IP-CIDR,52.199.72.131/32
   - IP-CIDR,13.115.144.95/32
   - IP-CIDR,18.182.217.117/32
   - IP-CIDR,18.179.116.166/32
-# PointShop:8787
+# Kaede channel
   - IP-CIDR,18.182.127.91/32
   - IP-CIDR,52.198.200.225/32
   - IP-CIDR,18.182.247.65/32
