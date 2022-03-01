@@ -1,5 +1,5 @@
 payload:
-# > nexon jp
+# > paypay
   - DOMAIN-SUFFIX,paypay.ne.jp
   - DOMAIN-SUFFIX,yahoo.co.jp
   - DOMAIN-KEYWORD,paypay
