@@ -12,3 +12,5 @@ payload:
   - DOMAIN-SUFFIX,tsutaya.co.jp
 # ソニー
   - DOMAIN-SUFFIX,sony.jp
+# BOOKOFF
+  - DOMAIN-SUFFIX,bookoffonline.co.jp
