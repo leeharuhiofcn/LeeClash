@@ -1,7 +1,6 @@
 payload:
 # > nexon jp
   - DOMAIN-SUFFIX,nexon.co.jp
-  - DOMAIN-SUFFIX,nexon.com
   - DOMAIN-SUFFIX,nexoncdn.co.kr
 # Login
   - DST-PORT,8484
