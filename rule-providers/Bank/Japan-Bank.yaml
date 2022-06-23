@@ -12,9 +12,12 @@ payload:
   - DOMAIN-KEYWORD,smbc
 # > 旧 ジャパンネット銀行
   - DOMAIN-SUFFIX,paypay-bank.co.jp
+  - DOMAIN-KEYWORD,paypay-bank
 # > ゆうちょ銀行
   - DOMAIN-SUFFIX,jp-bank.japanpost.jp
+  - DOMAIN-KEYWORD,japanpost
 # > 三菱UFJ
   - DOMAIN-SUFFIX,bk.mufg.jp
 # > みずほ銀行
   - DOMAIN-SUFFIX,mizuhobank.co.jp
+  - DOMAIN-KEYWORD,mizuho
