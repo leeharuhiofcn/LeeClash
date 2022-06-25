@@ -1,0 +1,5 @@
+payload:
+# > GMSR
+  - DOMAIN-SUFFIX,nexon.com
+  - DOMAIN-SUFFIX,nexon.io
+# Reboot channel
