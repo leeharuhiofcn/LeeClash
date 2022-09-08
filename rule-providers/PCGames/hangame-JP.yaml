@@ -1,2 +1,10 @@
 payload:
+# hangame
   - DOMAIN-SUFFIX,hangame.co.jp
+  - DOMAIN-SUFFIX,hange.jp
+# elsword
+  - DOMAIN-SUFFIX,elsword.com
+  - DOMAIN-SUFFIX,hange.jp
+  - DOMAIN-SUFFIX,playkog.com
+  - DOMAIN-SUFFIX,jp-live-gs.elsword.playkog.com
+  - DOMAIN-SUFFIX,elsword-jp.dn.playkog.com
