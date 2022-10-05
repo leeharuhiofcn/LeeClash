@@ -17,6 +17,8 @@ payload:
 #TouHou
   - DOMAIN,a1790.dscd.akamai.net
   - DOMAIN,assets-danmakujp.cdn-dena.com
+# cygames shadowverse pc
+  - DOMAIN,shadowverse.akamaized.net
 #Mach akamai
 #  - DOMAIN-SUFFIX,akamai.net
 #  - DOMAIN-SUFFIX,akamaiedge.net

@@ -1,14 +1,21 @@
 payload:
-# > nexon jp
-  - DOMAIN-SUFFIX,nexon.co.jp
+  - DOMAIN-SUFFIX,beanfun.com #TMS
+  - DOMAIN-SUFFIX,nexon.co.jp #JMS
   - DOMAIN-SUFFIX,nexoncdn.co.kr
+  #### GMSR
+  - DOMAIN-SUFFIX,nexon.com
+  - DOMAIN-SUFFIX,nexon.io
+  - DOMAIN-SUFFIX,nexon.net
+# maplesea
+  - DOMAIN-SUFFIX,maplesea.com,MapleStory #MY
+  - DOMAIN-SUFFIX,playpark.com,MapleStory #MY
 # Login
   - DST-PORT,8484
 # Channel port
   - DST-PORT,8585
   - DST-PORT,8586
-# PointShop port
   - DST-PORT,8787
+  - DST-PORT,8788
 # Reboot channel
   - IP-CIDR,18.182.188.187/32
   - IP-CIDR,52.199.72.131/32
@@ -26,5 +33,5 @@ payload:
   - IP-CIDR,3.113.72.83/32
   - IP-CIDR,13.113.189.117/32
   - IP-CIDR,52.68.74.83/32
-# > LastMatch for CFW
+# > EXE
   - PROCESS-NAME,MapleStory.exe

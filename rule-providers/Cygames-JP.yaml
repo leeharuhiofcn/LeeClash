@@ -13,3 +13,12 @@ payload:
 #cygames
   - DOMAIN-SUFFIX,cygames.jp
   - DOMAIN-KEYWORD,priconne-redive
+# > ウマ娘(JP)
+# Login
+# - DOMAIN,api-common01.cygames.jp
+# Main
+  - DOMAIN,api-umamusume.cygames.jp
+  - DOMAIN,prd-info-umamusume.akamaized.net
+#cygames
+  - DOMAIN-SUFFIX,cygames.jp
+  - DOMAIN-KEYWORD,umamusume

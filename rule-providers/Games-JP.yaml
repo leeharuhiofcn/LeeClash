@@ -1,0 +1,26 @@
+payload:
+# hangame
+  - DOMAIN-SUFFIX,hangame.co.jp
+  - DOMAIN-SUFFIX,hange.jp
+# elsword
+  - DOMAIN-SUFFIX,elsword.com
+  - DOMAIN-SUFFIX,hange.jp
+  - DOMAIN-SUFFIX,playkog.com
+  - DOMAIN-SUFFIX,jp-live-gs.elsword.playkog.com
+  - DOMAIN-SUFFIX,elsword-jp.dn.playkog.com
+  - PROCESS-NAME,elsword.exe
+# ncsoft
+  - DOMAIN-SUFFIX,ncsoft.jp
+# DMM
+  - DOMAIN-SUFFIX,dmm.co.jp
+  - DOMAIN-SUFFIX,dmm.com
+  - DOMAIN-SUFFIX,dmmgames.com
+  - DOMAIN-SUFFIX,dmm.hk
+  - DOMAIN-SUFFIX,dmm-extension.com
+# cygames shadowverse
+  - DOMAIN-SUFFIX,shadowverse.com
+  - DOMAIN-SUFFIX,shadowverse.jp
+  
+  - DOMAIN-SUFFIX,colorfulpalette.org
+# KTV DAM
+  - DOMAIN-SUFFIX,clubdam.com

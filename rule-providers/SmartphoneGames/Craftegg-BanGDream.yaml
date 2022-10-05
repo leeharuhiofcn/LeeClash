@@ -1,7 +1,0 @@
-payload:
-  # > BanG Dream!
-  - DOMAIN-SUFFIX,star.craftegg.jp
-  - DOMAIN-SUFFIX,ns.exitgames.com
-  # Party Match
-  - IP-CIDR,5.8.70.143/32
-  - IP-CIDR,20.89.104.232/32

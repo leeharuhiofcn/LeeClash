@@ -1,0 +1,7 @@
+payload:
+# Test
+  - DOMAIN-SUFFIX,baidu.com
+  - DOMAIN-SUFFIX,beanfun.com
+  - DOMAIN-SUFFIX,9vs1.com
+  - DOMAIN-SUFFIX,9vs1.cc
+  - DOMAIN-SUFFIX,nexon.net

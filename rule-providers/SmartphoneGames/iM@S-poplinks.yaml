@@ -1,6 +1,0 @@
-payload:
-  - DOMAIN,game.connect-puzzle.com
-  - DOMAIN-SUFFIX,connect-puzzle
-# DL
-  - DOMAIN,a1915.d.akamai.net
-  - DOMAIN,cdn-connect-puzzle.akamaized.net

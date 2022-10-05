@@ -1,7 +1,0 @@
-payload:
-  - DOMAIN,api.shinycolors.enza.fun
-  - DOMAIN,platform-sdk.enza.fun
-  - DOMAIN,server-status.enza.fun
-  - DOMAIN,sdk.enza.fun
-  - DOMAIN,shinycolors.enza.fun
-  - DOMAIN-SUFFIX,enza.fun

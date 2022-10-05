@@ -1,0 +1,55 @@
+payload:
+# ヤフオク
+  - DOMAIN-SUFFIX,yahoo.co.jp
+# メルカリ
+  - DOMAIN-SUFFIX,jp.mercari.com
+  - DOMAIN-KEYWORD,mercari
+# アマゾン
+  - DOMAIN-SUFFIX,amazon.co.jp
+  - DOMAIN-SUFFIX,amazonpayments.com
+  - DOMAIN-SUFFIX,ssl-images-amazon.com
+# 駿河屋
+  - DOMAIN-SUFFIX,suruga-ya.jp
+# ツタヤ
+  - DOMAIN-SUFFIX,tsutaya.co.jp
+# ソニー
+  - DOMAIN-SUFFIX,sony.jp
+# BOOKOFF
+  - DOMAIN-SUFFIX,bookoffonline.co.jp
+# Bank
+# > 楽天銀行
+  - DOMAIN-SUFFIX,rakuten-card.co.jp
+  - DOMAIN-SUFFIX,member.id.rakuten.co.jp
+  - DOMAIN-SUFFIX,rakuten-static.com
+  - DOMAIN-SUFFIX,rakuten.co.jp
+  - DOMAIN-SUFFIX,rakuten.com
+  - DOMAIN-KEYWORD,rakuten
+# > 三井住友銀行
+  - DOMAIN-SUFFIX,smbc.co.jp
+  - DOMAIN-SUFFIX,smbc-card.com
+  - DOMAIN-KEYWORD,smbc
+# > 旧 ジャパンネット銀行
+  - DOMAIN-SUFFIX,paypay-bank.co.jp
+  - DOMAIN-KEYWORD,paypay-bank
+  - DOMAIN-SUFFIX,paypay.ne.jp
+  - DOMAIN-SUFFIX,yahoo.co.jp
+  - DOMAIN-KEYWORD,paypay
+  - DOMAIN-KEYWORD,yahoojapanshopping
+# > ゆうちょ銀行
+  - DOMAIN-SUFFIX,jp-bank.japanpost.jp
+  - DOMAIN-KEYWORD,japanpost
+# > 三菱UFJ
+  - DOMAIN-SUFFIX,bk.mufg.jp
+# > みずほ銀行
+  - DOMAIN-SUFFIX,mizuhobank.co.jp
+  - DOMAIN-KEYWORD,mizuho
+# > E net
+  - DOMAIN-SUFFIX,enetcom.co.jp
+# > 勉強サイト
+  - DOMAIN-SUFFIX,excel-ubara.com
+  - DOMAIN-SUFFIX,officetanaka.net
+  - DOMAIN-SUFFIX,sakura-paris.org
+# > 素材サイト
+  - DOMAIN-SUFFIX,happylilac.net
+  - DOMAIN-SUFFIX,print-kids.net
+  - DOMAIN-SUFFIX,clubdam.com

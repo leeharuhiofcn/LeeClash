@@ -1,0 +1,45 @@
+payload:
+# mobile games-JP
+# Pass the wall
+# CGSS
+  - DOMAIN-SUFFIX,starlight-stage.jp
+# Poplinks
+  - DOMAIN,game.connect-puzzle.com
+  - DOMAIN-SUFFIX,connect-puzzle
+  - DOMAIN,a1915.d.akamai.net
+  - DOMAIN,cdn-connect-puzzle.akamaized.net
+# Shinycolors
+  - DOMAIN,api.shinycolors.enza.fun
+  - DOMAIN,platform-sdk.enza.fun
+  - DOMAIN,server-status.enza.fun
+  - DOMAIN,sdk.enza.fun
+  - DOMAIN,shinycolors.enza.fun
+  - DOMAIN-SUFFIX,enza.fun
+  - DOMAIN-KEYWORD,shinycolors
+# Theaterdays
+  - DOMAIN,theaterdays.appspot.com
+  - DOMAIN-KEYWORD,theaterdays
+# BlueArchive
+  - DOMAIN-SUFFIX,yostar-serverinfo.bluearchiveyostar.com
+  - DOMAIN-SUFFIX,ba-jp-sdk.bluearchive.jp
+  - DOMAIN-SUFFIX,prod-notice.bluearchiveyostar.com
+  - DOMAIN-SUFFIX,prod-gateway.bluearchiveyostar.com
+  - DOMAIN-SUFFIX,prod-game.bluearchiveyostar.com
+  - DOMAIN-SUFFIX,prod-clientpatch.bluearchiveyostar.com
+  - DOMAIN-KEYWORD,bluearchiveyostar
+# Granbluefantasy
+  - DOMAIN-SUFFIX,granbluefantasy.jp
+  - DOMAIN-SUFFIX,andapp.jp
+  - DOMAIN-SUFFIX,mbga.jp
+  - DOMAIN-SUFFIX,mobage.jp
+# 東方ダンマクカグラ
+  - DOMAIN,danmakujp4-v1.lcx.tokyo
+  - DOMAIN,player-api-production.danmakujp-server.com
+# - DOMAIN,assets-danmakujp.cdn-dena.com
+  - DOMAIN-KEYWORD,danmakujp
+# > BanG Dream!
+  - DOMAIN-SUFFIX,star.craftegg.jp
+  - DOMAIN-SUFFIX,ns.exitgames.com
+  # Party Match
+  - IP-CIDR,5.8.70.143/32
+  - IP-CIDR,20.89.104.232/32
