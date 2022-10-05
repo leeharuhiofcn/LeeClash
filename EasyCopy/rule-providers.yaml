@@ -1,134 +1,78 @@
 #以下放置于 rule-providers，注意对齐
-reject: # 广告域名列表
+ADBlock: # 广告域名列表
   type: http
   behavior: domain
   url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
   path: ./ruleset/reject.yaml
   interval: 86400
-Google: # Pass wall
+MapleStory:
   type: http
   behavior: domain
-  url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
-  path: ./ruleset/Google.yaml
-  interval: 86400
-JP-Bank:
-  type: http
-  behavior: domain
-  url: "https://raw.githubusercontent.com/leeharuhiofcn/LeeClash/main/rule-providers/Bank/Japan-Bank.yaml"
-  path: ./ruleset/Japan-Bank.yaml
-  interval: 86400
-# PC Games
-Steam: # Steam
-  type: http
-  behavior: classical
-  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/PCGames/Steam.yaml"
-  path: ./ruleset/Steam.yaml
-  interval: 86400
-NEXON-JMS:
-  type: file
-  behavior: classical
-  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/PCGames/Nexon-MapleStory-JP.yaml"
-  path: ./ruleset/MapleStory_JP.yaml
-  interval: 86400
-NCSOFT:
-  type: http
-  behavior: classical
-  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/PCGames/Ncsoft-JP.yaml"
-  path: ./ruleset/Ncsoft-JP.yaml
-  interval: 86400
-HANGAME:
-  type: http
-  behavior: classical
-  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/PCGames/hangame-JP.yaml"
-  path: ./ruleset/hangame-JP.yaml
-  interval: 86400
-# SNS
-Discord: # Discord
-  type: http
-  behavior: classical
-  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/SNS/Discord.yaml"
-  path: ./ruleset/Discord.yaml
-  interval: 86400
-  
-telegramcidr: # Telegram 使用的 IP 地址列表
-  type: http
-  behavior: ipcidr
-  url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
-  path: ./ruleset/telegramcidr.yaml
-  interval: 86400
-Line:
-  type: http
-  behavior: classical
-  url: "https://raw.githubusercontent.com/leeharuhiofcn/LeeClash/main/rule-providers/SNS/Line.yaml"
-  path: ./ruleset/Line.yaml
-  interval: 86400
-# SmartPhone Games
-# PCRDive
-PCRDive:
-  type: http
-  behavior: classical
-  url: "https://raw.githubusercontent.com/leeharuhiofcn/LeeClash/main/rule-providers/SmartphoneGames/Cygames-PrincessConnectReDive-JP.yaml"
-  path: ./ruleset/PrincessConnectReDive-JP.yaml
-  interval: 86400
-# ウマ娘
-UMA:
-  type: http
-  behavior: classical
-  url: "https://raw.githubusercontent.com/leeharuhiofcn/LeeClash/main/rule-providers/SmartphoneGames/Cygames-Umamusume-JP.yaml"
-  path: ./ruleset/Umamusume-JP.yaml
-  interval: 86400
-# アイドルマスター ミリオンライブ シアターデイズ
-iM@S-Theaterdays:
-  type: http
-  behavior: classical
-  url: "https://raw.githubusercontent.com/leeharuhiofcn/LeeClash/main/rule-providers/SmartphoneGames/BanDai-iM%40s-Theaterdays.yaml"
-  path: ./ruleset/iM@S-Theaterdays.yaml
-  interval: 86400
-# 東方弾幕
-Touhou-Danmaku:
-  type: http
-  behavior: classical
-  url: "https://raw.githubusercontent.com/leeharuhiofcn/LeeClash/main/rule-providers/SmartphoneGames/DeNA%20%26%20Xeen-Touho-DanmakuKagura.yaml"
-  path: ./ruleset/Touhou-Danmaku.yaml
-  interval: 86400
-# 手游数据
-GameDataDL:
-  type: http
-  behavior: classical
-  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/SmartphoneGames/GameDataDL.yaml"
-  path: ./ruleset/GameDataDL.yaml
-  interval: 86400
-# セガ 初音ミク,可直连
-SEGA-Miku:
-  type: http
-  behavior: classical
-  url: "https://raw.githubusercontent.com/leeharuhiofcn/LeeClash/main/rule-providers/SmartphoneGames/ColorfulPalette-SEGA-Miku.yaml"
-  path: ./ruleset/SEGA-Miku.yaml
-  interval: 86400
-# JP-SHOP
-JP-SHOP:
-  type: http
-  behavior: classical
-  url: "https://raw.githubusercontent.com/leeharuhiofcn/LeeClash/main/rule-providers/Shopping/JP-SHOP.yaml"
-  path: ./ruleset/JP-SHOP.yaml
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/MapleStory.yaml"
+  path: ./ruleset/MapleStory.yaml
   interval: 86400
 
-GFW: # Pass wall
+# JP severs
+JP: #Life-JP
   type: http
   behavior: domain
-  url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
-  path: ./ruleset/GFW.yaml
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Life-JP.yaml"
+  path: ./ruleset/Life-JP.yaml
   interval: 86400
-proxy: # 代理域名列表
+JP: #Cygames-JP
   type: http
   behavior: domain
-  url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
-  path: ./ruleset/proxy.yaml
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Cygames-JP.yaml"
+  path: ./ruleset/Cygames-JP.yaml
   interval: 86400
-# 需要直连的常见软件列表 
-China-APP: 
+JP: #Amazon
   type: http
-  behavior: classical
-  url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
-  path: ./ruleset/China-APP.yaml
+  behavior: domain
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Amazon.yaml"
+  path: ./ruleset/Amazon.yaml
+  interval: 86400
+JP: #Games-JP
+  type: http
+  behavior: domain
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Games-JP.yaml"
+  path: ./ruleset/Games-JP.yaml
+  interval: 86400
+JP: #Elsword
+  type: http
+  behavior: domain
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Elsword.yaml"
+  path: ./ruleset/Elsword.yaml
+  interval: 86400
+
+Steam:
+  type: http
+  behavior: domain
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Steam.yaml"
+  path: ./ruleset/Steam.yaml
+  interval: 86400
+# SNS
+留学:
+  type: http
+  behavior: domain
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/telegramcidr.yaml"
+  path: ./ruleset/telegramcidr.yaml
+  interval: 86400
+留学:
+  type: http
+  behavior: domain
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Line.yaml"
+  path: ./ruleset/Line.yaml
+  interval: 86400
+留学:
+  type: http
+  behavior: domain
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Discord.yaml"
+  path: ./ruleset/Discord.yaml
+  interval: 86400
+# 流媒体
+Netflix:
+  type: http
+  behavior: domain
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Netflix.yaml"
+  path: ./ruleset/Netflix.yaml
   interval: 86400

@@ -1,0 +1,18 @@
+payload:  
+# elsword for JP
+  - DOMAIN-SUFFIX,hangame.co.jp
+  - DOMAIN-SUFFIX,hange.jp
+  - DOMAIN-SUFFIX,elsword.com
+  - DOMAIN-SUFFIX,hange.jp
+  - DOMAIN-SUFFIX,playkog.com
+  - DOMAIN-SUFFIX,jp-live-gs.elsword.playkog.com
+  - DOMAIN-SUFFIX,elsword-jp.dn.playkog.com
+  - DOMAIN-SUFFIX,hangame.co.jp
+  - DOMAIN-SUFFIX,hange.jp
+  - DOMAIN-SUFFIX,elsword.com
+  - DOMAIN-SUFFIX,hange.jp
+  - DOMAIN-SUFFIX,playkog.com,JP
+  - DOMAIN-SUFFIX,jp-live-gs.elsword.playkog.com
+  - DOMAIN-SUFFIX,elsword-jp.dn.playkog.com
+  - PROCESS-NAME,elsword.exe
+  - PROCESS-NAME,x2.exe

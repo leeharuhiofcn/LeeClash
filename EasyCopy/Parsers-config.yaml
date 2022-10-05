@@ -21,7 +21,7 @@ prepend-proxy-groups:
       - JP
       - TW
       - USA
-  - name: elsword
+  - name: Elsword
     type: select
     proxies:
       - DIRECT
@@ -43,11 +43,27 @@ prepend-proxy-groups:
     type: select
     proxies:
   # Other
+  - name: JP手游
+    type: select
+    proxies:
+  - name: JP手游数据下载
+    type: select
+    proxies:
+      - DIRECT
+      - JP手游
+  - name: Netflix
+    type: select
+    proxies:
+      - JP
+      - HK
+      - TW
+      - USA
   - name: Steam
     type: select
     proxies:
       - DIRECT
-      - All-PROXY
+      - All-PROXY   
+  # End
   - name: 强国
     type: select
     proxies:
@@ -63,6 +79,9 @@ prepend-proxy-groups:
 commands:
 #- proxy-groups.All-PROXY.proxies=[]proxyNames # 向指定策略组添加订阅中的节点名
   - proxy-groups.All-PROXY.proxies.0+DIRECT # 向指All-PROXY第一个位置添加DIRECT节点
+  - proxy-groups.JP手游.proxies.0+JP
+  - proxy-groups.JP手游.proxies.1+HK
+  - proxy-groups.JP手游.proxies.2+TW
   - proxy-groups.JP.proxies=[]proxyNames|(日|JP)
   - proxy-groups.HK.proxies=[]proxyNames|(香|HK)
   - proxy-groups.TW.proxies=[]proxyNames|(台|TW)
@@ -70,6 +89,89 @@ commands:
   - proxy-groups.SEA.proxies=[]proxyNames|(MY|SG|马来|新加坡)
 #添加自定义规则
 mix-rule-providers:
+  #以下放置于 rule-providers，注意对齐
+  ADBlock: # 广告域名列表
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    path: ./ruleset/reject.yaml
+    interval: 86400
+  MapleStory:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/MapleStory.yaml"
+    path: ./ruleset/MapleStory.yaml
+    interval: 86400
+  Elsword:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Elsword.yaml"
+    path: ./ruleset/Elsword.yaml
+    interval: 86400
+  # JP severs
+  JP: #Life-JP
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Life-JP.yaml"
+    path: ./ruleset/Life-JP.yaml
+    interval: 86400
+  JP: #Cygames-JP
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Cygames-JP.yaml"
+    path: ./ruleset/Cygames-JP.yaml
+    interval: 86400
+  JP: #Amazon
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Amazon.yaml"
+    path: ./ruleset/Amazon.yaml
+    interval: 86400
+  JP: #Games-JP
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Games-JP.yaml"
+    path: ./ruleset/Games-JP.yaml
+    interval: 86400
+  JP: #Elsword
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Elsword.yaml"
+    path: ./ruleset/Elsword.yaml
+    interval: 86400
+
+  Steam:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Steam.yaml"
+    path: ./ruleset/Steam.yaml
+    interval: 86400
+  # SNS
+  留学:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/telegramcidr.yaml"
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+  留学:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Line.yaml"
+    path: ./ruleset/Line.yaml
+    interval: 86400
+  留学:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Discord.yaml"
+    path: ./ruleset/Discord.yaml
+    interval: 86400
+  # 流媒体
+  Netflix:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Netflix.yaml"
+    path: ./ruleset/Netflix.yaml
+    interval: 86400
 prepend-rules: 
 # > Rule Set
 # >建议使用DOMAIN-SUFFIX，而不是DOMAIN，很多时候你不知道你的使用的服务的域名结构
@@ -80,390 +182,6 @@ prepend-rules:
 # > www.dmhy.org
   - DOMAIN-SUFFIX,dmhy.org,All-PROXY  
   - DOMAIN-SUFFIX,instructables.com,All-PROXY
-# > elsword JP
-  - DOMAIN-SUFFIX,hangame.co.jp,elsword
-  - DOMAIN-SUFFIX,hange.jp,elsword
-  - DOMAIN-SUFFIX,elsword.com,elsword
-  - DOMAIN-SUFFIX,hange.jp,elsword
-  - DOMAIN-SUFFIX,playkog.com,elsword
-  - DOMAIN-SUFFIX,jp-live-gs.elsword.playkog.com,elsword
-  - DOMAIN-SUFFIX,elsword-jp.dn.playkog.com,elsword
-  - DOMAIN-SUFFIX,hangame.co.jp,elsword
-  - DOMAIN-SUFFIX,hange.jp,elsword
-  - DOMAIN-SUFFIX,elsword.com,elsword
-  - DOMAIN-SUFFIX,hange.jp,elsword
-  - DOMAIN-SUFFIX,playkog.com,JP
-  - DOMAIN-SUFFIX,jp-live-gs.elsword.playkog.com,elsword
-  - DOMAIN-SUFFIX,elsword-jp.dn.playkog.com,elsword
-  - PROCESS-NAME,elsword.exe,elsword
-  - PROCESS-NAME,x2.exe,elsword
-# > ncsoft dmm
-  - DOMAIN-SUFFIX,ncsoft.jp,JP
-  - DOMAIN-SUFFIX,dmm.co.jp,JP
-  - DOMAIN-SUFFIX,dmm.com,JP
-  - DOMAIN-SUFFIX,dmmgames.com,JP
-  - DOMAIN-SUFFIX,dmm.hk,JP
-  - DOMAIN-SUFFIX,dmm-extension.com,JP
-  - DOMAIN-SUFFIX,shadowverse.com,JP
-  - DOMAIN-SUFFIX,shadowverse.jp,JP
-  - DOMAIN-SUFFIX,clubdam.com,JP
-# > MapleStory
-  - DOMAIN-SUFFIX,nexon.co.jp,MapleStory
-  - DOMAIN-SUFFIX,nexoncdn.co.kr,MapleStory
-  - DST-PORT,8484,MapleStory
-  - DST-PORT,8585,MapleStory
-  - DST-PORT,8586,MapleStory
-  - DST-PORT,8787,MapleStory
-  - DST-PORT,8788,MapleStory
-  - IP-CIDR,18.182.188.187/32,MapleStory
-  - IP-CIDR,52.199.72.131/32,MapleStory
-  - IP-CIDR,13.115.144.95/32,MapleStory
-  - IP-CIDR,18.182.217.117/32,MapleStory
-  - IP-CIDR,18.179.116.166/32,MapleStory
-  - IP-CIDR,18.182.127.91/32,MapleStory
-  - IP-CIDR,52.198.200.225/32,MapleStory
-  - IP-CIDR,18.182.247.65/32,MapleStory
-  - IP-CIDR,52.192.143.131/32,MapleStory
-  - IP-CIDR,52.194.137.165/32,MapleStory
-  - IP-CIDR,54.64.122.179/32,MapleStory
-  - IP-CIDR,18.179.225.221/32,MapleStory
-  - IP-CIDR,3.113.72.83/32,MapleStory
-  - IP-CIDR,13.113.189.117/32,MapleStory
-  - IP-CIDR,52.68.74.83/32,MapleStory
-  - DOMAIN-SUFFIX,nexon.com,MapleStory
-  - DOMAIN-SUFFIX,nexon.io,MapleStory
-  - DOMAIN-SUFFIX,nexon.net,MapleStory
-  - DOMAIN-SUFFIX,maplesea.com,MapleStory #MY
-  - DOMAIN-SUFFIX,playpark.com,MapleStory #MY
-  - PROCESS-NAME,MapleStory.exe,MapleStory
-# > JP
-  - DOMAIN-SUFFIX,yahoo.co.jp,JP
-  - DOMAIN-SUFFIX,jp.mercari.com,JP
-  - DOMAIN-KEYWORD,mercari,JP
-  - DOMAIN-SUFFIX,amazon.co.jp,JP
-  - DOMAIN-SUFFIX,amazonpayments.com,JP
-  - DOMAIN-SUFFIX,ssl-images-amazon.com,JP
-  - DOMAIN-SUFFIX,suruga-ya.jp,JP
-  - DOMAIN-SUFFIX,tsutaya.co.jp,JP
-  - DOMAIN-SUFFIX,sony.jp,JP
-  - DOMAIN-SUFFIX,bookoffonline.co.jp,JP
-  - DOMAIN-SUFFIX,rakuten-card.co.jp,JP
-  - DOMAIN-SUFFIX,member.id.rakuten.co.jp,JP
-  - DOMAIN-SUFFIX,rakuten-static.com,JP
-  - DOMAIN-SUFFIX,rakuten.co.jp,JP
-  - DOMAIN-SUFFIX,rakuten.com,JP
-  - DOMAIN-KEYWORD,rakuten,JP
-  - DOMAIN-SUFFIX,smbc.co.jp,JP
-  - DOMAIN-SUFFIX,smbc-card.com,JP
-  - DOMAIN-KEYWORD,smbc,JP
-  - DOMAIN-SUFFIX,paypay-bank.co.jp,JP
-  - DOMAIN-KEYWORD,paypay-bank,JP
-  - DOMAIN-SUFFIX,paypay.ne.jp,JP
-  - DOMAIN-SUFFIX,yahoo.co.jp,JP
-  - DOMAIN-KEYWORD,paypay,JP
-  - DOMAIN-KEYWORD,yahoojapanshopping,JP
-  - DOMAIN-SUFFIX,jp-bank.japanpost.jp,JP
-  - DOMAIN-KEYWORD,japanpost,JP
-  - DOMAIN-SUFFIX,bk.mufg.jp,JP
-  - DOMAIN-SUFFIX,mizuhobank.co.jp,JP
-  - DOMAIN-KEYWORD,mizuho,JP
-  - DOMAIN-SUFFIX,enetcom.co.jp,JP
-  - DOMAIN-SUFFIX,excel-ubara.com,JP
-  - DOMAIN-SUFFIX,officetanaka.net,JP
-  - DOMAIN-SUFFIX,sakura-paris.org,JP
-  - DOMAIN-SUFFIX,happylilac.net,JP
-  - DOMAIN-SUFFIX,print-kids.net,JP
-  - DOMAIN-SUFFIX,clubdam.com,JP
-  - DOMAIN,api-common01.cygames.jp,JP
-  - DOMAIN,app-info.priconne-redive.jp,JP
-  - DOMAIN,api-priconne-redive.cygames.jp,JP
-  - IP-CIDR,23.59.209.33/32,JP
-  - DOMAIN-SUFFIX,cygames.jp,JP
-  - DOMAIN-KEYWORD,priconne-redive,JP
-  - DOMAIN,api-umamusume.cygames.jp,JP
-  - DOMAIN,prd-info-umamusume.akamaized.net,JP
-  - DOMAIN-SUFFIX,cygames.jp,JP
-  - DOMAIN-KEYWORD,umamusume,JP
-  - DOMAIN-SUFFIX,aiv-cdn.net,JP
-  - DOMAIN-SUFFIX,amazon.co.jp,JP
-  - DOMAIN-SUFFIX,amazon.com,JP
-  - DOMAIN-SUFFIX,amazonaws.co.uk,JP
-  - DOMAIN-SUFFIX,amazonaws.com,JP
-  - DOMAIN-SUFFIX,amazonvideo.com,JP
-  - DOMAIN-SUFFIX,llnwd.net,JP
-  - DOMAIN-SUFFIX,media-amazon.com,JP
-  - DOMAIN-SUFFIX,primevideo.com,JP
-  - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,JP
-  - DOMAIN,d22qjgkvxw22r6.cloudfront.net,JP
-  - DOMAIN,d25xi40x97liuc.cloudfront.net,JP
-  - DOMAIN,d27xxe7juh1us6.cloudfront.net,JP
-  - DOMAIN,dmqdd6hw24ucf.cloudfront.net,JP
-  - DOMAIN-SUFFIX,aiv-cdn.net,JP
-  - DOMAIN-SUFFIX,aiv-delivery.net,JP
-  - DOMAIN-SUFFIX,amazonprimevideo.cn,JP
-  - DOMAIN-SUFFIX,amazonprimevideo.com.cn,JP
-  - DOMAIN-SUFFIX,amazonprimevideos.com,JP
-  - DOMAIN-SUFFIX,amazonvideo.cc,JP
-  - DOMAIN-SUFFIX,amazonvideo.com,JP
-  - DOMAIN-SUFFIX,atv-ps.amazon.com,JP
-  - DOMAIN-SUFFIX,avodmp4s3ww-a.akamaihd.net,JP
-  - DOMAIN-SUFFIX,fls-na.amazon.com,JP
-  - DOMAIN-SUFFIX,llnwd.net,JP
-  - DOMAIN-SUFFIX,media-amazon.com,JP
-  - DOMAIN-SUFFIX,prime-video.com,JP
-  - DOMAIN-SUFFIX,primevideo.cc,JP
-  - DOMAIN-SUFFIX,primevideo.com,JP
-  - DOMAIN-SUFFIX,primevideo.info,JP
-  - DOMAIN-SUFFIX,primevideo.org,JP
-  - DOMAIN-SUFFIX,primevideo.tv,JP
-  - DOMAIN-KEYWORD,avoddashs,JP
-  - DOMAIN-SUFFIX,account-paypal.info,JP
-  - DOMAIN-SUFFIX,account-paypal.net,JP
-  - DOMAIN-SUFFIX,account-paypal.org,JP
-  - DOMAIN-SUFFIX,accountpaypal.com,JP
-  - DOMAIN-SUFFIX,accountpaypal.net,JP
-  - DOMAIN-SUFFIX,accountpaypal.org,JP
-  - DOMAIN-SUFFIX,anfutong.cn,JP
-  - DOMAIN-SUFFIX,anfutong.com,JP
-  - DOMAIN-SUFFIX,anfutong.com.cn,JP
-  - DOMAIN-SUFFIX,beibao.cn,JP
-  - DOMAIN-SUFFIX,beibao.com,JP
-  - DOMAIN-SUFFIX,beibao.com.cn,JP
-  - DOMAIN-SUFFIX,bill-safe.com,JP
-  - DOMAIN-SUFFIX,billmelater.com,JP
-  - DOMAIN-SUFFIX,billmelater.info,JP
-  - DOMAIN-SUFFIX,billmelater.net,JP
-  - DOMAIN-SUFFIX,bml.info,JP
-  - DOMAIN-SUFFIX,braintreegateway.com,JP
-  - DOMAIN-SUFFIX,braintreegateway.tv,JP
-  - DOMAIN-SUFFIX,braintreepayments.com,JP
-  - DOMAIN-SUFFIX,braintreepayments.info,JP
-  - DOMAIN-SUFFIX,braintreepayments.org,JP
-  - DOMAIN-SUFFIX,braintreepayments.tv,JP
-  - DOMAIN-SUFFIX,braintreepaymentsolutions.com,JP
-  - DOMAIN-SUFFIX,braintreeps.com,JP
-  - DOMAIN-SUFFIX,briantreepayments.net,JP
-  - DOMAIN-SUFFIX,briantreepayments.tv,JP
-  - DOMAIN-SUFFIX,buyfast-paysmart.net,JP
-  - DOMAIN-SUFFIX,card.io,JP
-  - DOMAIN-SUFFIX,cash2.com,JP
-  - DOMAIN-SUFFIX,cashify.com,JP
-  - DOMAIN-SUFFIX,cashify.net,JP
-  - DOMAIN-SUFFIX,devtools-paypal.com,JP
-  - DOMAIN-SUFFIX,experiencebillmelater.com,JP
-  - DOMAIN-SUFFIX,filipino-music.net,JP
-  - DOMAIN-SUFFIX,fundpaypal.com,JP
-  - DOMAIN-SUFFIX,getbraintree.com,JP
-  - DOMAIN-SUFFIX,gmoney.org,JP
-  - DOMAIN-SUFFIX,i-o-u.info,JP
-  - DOMAIN-SUFFIX,krakenjs.com,JP
-  - DOMAIN-SUFFIX,loanbuilder.com,JP
-  - DOMAIN-SUFFIX,login-paypal.com,JP
-  - DOMAIN-SUFFIX,login-paypal.info,JP
-  - DOMAIN-SUFFIX,mywaytopay.info,JP
-  - DOMAIN-SUFFIX,mywaytopay.net,JP
-  - DOMAIN-SUFFIX,pa9pal.com,JP
-  - DOMAIN-SUFFIX,paaypal.com,JP
-  - DOMAIN-SUFFIX,paily.net,JP
-  - DOMAIN-SUFFIX,paily.org,JP
-  - DOMAIN-SUFFIX,paipal.com,JP
-  - DOMAIN-SUFFIX,pavpal.com,JP
-  - DOMAIN-SUFFIX,paydiant.com,JP
-  - DOMAIN-SUFFIX,paylike.com,JP
-  - DOMAIN-SUFFIX,paypa1.com,JP
-  - DOMAIN-SUFFIX,paypa1.org,JP
-  - DOMAIN-SUFFIX,paypaal.com,JP
-  - DOMAIN-SUFFIX,paypal-activate.com,JP
-  - DOMAIN-SUFFIX,paypal-activate.info,JP
-  - DOMAIN-SUFFIX,paypal-activate.org,JP
-  - DOMAIN-SUFFIX,paypal-apac.com,JP
-  - DOMAIN-SUFFIX,paypal-apps.com,JP
-  - DOMAIN-SUFFIX,paypal-biz.com,JP
-  - DOMAIN-SUFFIX,paypal-brandcentral.com,JP
-  - DOMAIN-SUFFIX,paypal-business.com,JP
-  - DOMAIN-SUFFIX,paypal-business.net,JP
-  - DOMAIN-SUFFIX,paypal-business.org,JP
-  - DOMAIN-SUFFIX,paypal-cardcash.com,JP
-  - DOMAIN-SUFFIX,paypal-cash.com,JP
-  - DOMAIN-SUFFIX,paypal-center.com,JP
-  - DOMAIN-SUFFIX,paypal-center.info,JP
-  - DOMAIN-SUFFIX,paypal-center.net,JP
-  - DOMAIN-SUFFIX,paypal-center.org,JP
-  - DOMAIN-SUFFIX,paypal-communication.com,JP
-  - DOMAIN-SUFFIX,paypal-communications.com,JP
-  - DOMAIN-SUFFIX,paypal-communications.net,JP
-  - DOMAIN-SUFFIX,paypal-community.com,JP
-  - DOMAIN-SUFFIX,paypal-community.net,JP
-  - DOMAIN-SUFFIX,paypal-comunidad.com,JP
-  - DOMAIN-SUFFIX,paypal-corp.com,JP
-  - DOMAIN-SUFFIX,paypal-database.com,JP
-  - DOMAIN-SUFFIX,paypal-database.us,JP
-  - DOMAIN-SUFFIX,paypal-donations.com,JP
-  - DOMAIN-SUFFIX,paypal-dynamic.com,JP
-  - DOMAIN-SUFFIX,paypal-engineering.com,JP
-  - DOMAIN-SUFFIX,paypal-europe.com,JP
-  - DOMAIN-SUFFIX,paypal-excelinvoicing.com,JP
-  - DOMAIN-SUFFIX,paypal-exchanges.com,JP
-  - DOMAIN-SUFFIX,paypal-forward.com,JP
-  - DOMAIN-SUFFIX,paypal-galactic.com,JP
-  - DOMAIN-SUFFIX,paypal-gift.com,JP
-  - DOMAIN-SUFFIX,paypal-gifts.com,JP
-  - DOMAIN-SUFFIX,paypal-gpplus.com,JP
-  - DOMAIN-SUFFIX,paypal-here.com,JP
-  - DOMAIN-SUFFIX,paypal-hrsystem.com,JP
-  - DOMAIN-SUFFIX,paypal-innovationlab.com,JP
-  - DOMAIN-SUFFIX,paypal-integration.com,JP
-  - DOMAIN-SUFFIX,paypal-japan.com,JP
-  - DOMAIN-SUFFIX,paypal-knowledge.com,JP
-  - DOMAIN-SUFFIX,paypal-labs.com,JP
-  - DOMAIN-SUFFIX,paypal-latam.com,JP
-  - DOMAIN-SUFFIX,paypal-learning.com,JP
-  - DOMAIN-SUFFIX,paypal-login.com,JP
-  - DOMAIN-SUFFIX,paypal-login.info,JP
-  - DOMAIN-SUFFIX,paypal-login.org,JP
-  - DOMAIN-SUFFIX,paypal-login.us,JP
-  - DOMAIN-SUFFIX,paypal-luxury.com,JP
-  - DOMAIN-SUFFIX,paypal-mainstreet.net,JP
-  - DOMAIN-SUFFIX,paypal-marketing.com,JP
-  - DOMAIN-SUFFIX,paypal-media.com,JP
-  - DOMAIN-SUFFIX,paypal-merchantloyalty.com,JP
-  - DOMAIN-SUFFIX,paypal-mktg.com,JP
-  - DOMAIN-SUFFIX,paypal-mobilemoney.com,JP
-  - DOMAIN-SUFFIX,paypal-network.org,JP
-  - DOMAIN-SUFFIX,paypal-notice.com,JP
-  - DOMAIN-SUFFIX,paypal-notify.com,JP
-  - DOMAIN-SUFFIX,paypal-online.info,JP
-  - DOMAIN-SUFFIX,paypal-online.net,JP
-  - DOMAIN-SUFFIX,paypal-online.org,JP
-  - DOMAIN-SUFFIX,paypal-optimizer.com,JP
-  - DOMAIN-SUFFIX,paypal-pages.com,JP
-  - DOMAIN-SUFFIX,paypal-photocard.com,JP
-  - DOMAIN-SUFFIX,paypal-plaza.com,JP
-  - DOMAIN-SUFFIX,paypal-portal.com,JP
-  - DOMAIN-SUFFIX,paypal-prepagata.com,JP
-  - DOMAIN-SUFFIX,paypal-prepagata.net,JP
-  - DOMAIN-SUFFIX,paypal-prepaid.com,JP
-  - DOMAIN-SUFFIX,paypal-profile.com,JP
-  - DOMAIN-SUFFIX,paypal-proserv.com,JP
-  - DOMAIN-SUFFIX,paypal-qrshopping.org,JP
-  - DOMAIN-SUFFIX,paypal-recargacelular.com,JP
-  - DOMAIN-SUFFIX,paypal-redeem.com,JP
-  - DOMAIN-SUFFIX,paypal-referral.com,JP
-  - DOMAIN-SUFFIX,paypal-retail.com,JP
-  - DOMAIN-SUFFIX,paypal-scoop.com,JP
-  - DOMAIN-SUFFIX,paypal-search.com,JP
-  - DOMAIN-SUFFIX,paypal-secure.net,JP
-  - DOMAIN-SUFFIX,paypal-secure.org,JP
-  - DOMAIN-SUFFIX,paypal-security.net,JP
-  - DOMAIN-SUFFIX,paypal-security.org,JP
-  - DOMAIN-SUFFIX,paypal-service.org,JP
-  - DOMAIN-SUFFIX,paypal-signin.com,JP
-  - DOMAIN-SUFFIX,paypal-signin.us,JP
-  - DOMAIN-SUFFIX,paypal-special.com,JP
-  - DOMAIN-SUFFIX,paypal-specialoffers.com,JP
-  - DOMAIN-SUFFIX,paypal-sptam.com,JP
-  - DOMAIN-SUFFIX,paypal-status.com,JP
-  - DOMAIN-SUFFIX,paypal-support.com,JP
-  - DOMAIN-SUFFIX,paypal-survey.com,JP
-  - DOMAIN-SUFFIX,paypal-survey.org,JP
-  - DOMAIN-SUFFIX,paypal-team.com,JP
-  - DOMAIN-SUFFIX,paypal-viewpoints.net,JP
-  - DOMAIN-SUFFIX,paypal.ca,JP
-  - DOMAIN-SUFFIX,paypal.com,JP
-  - DOMAIN-SUFFIX,paypal.com.cn,JP
-  - DOMAIN-SUFFIX,paypal.com.hk,JP
-  - DOMAIN-SUFFIX,paypal.com.sg,JP
-  - DOMAIN-SUFFIX,paypal.hk,JP
-  - DOMAIN-SUFFIX,paypal.info,JP
-  - DOMAIN-SUFFIX,paypal.jp,JP
-  - DOMAIN-SUFFIX,paypal.me,JP
-  - DOMAIN-SUFFIX,paypal.net.cn,JP
-  - DOMAIN-SUFFIX,paypal.org.cn,JP
-  - DOMAIN-SUFFIX,paypal.so,JP
-  - DOMAIN-SUFFIX,paypal.us,JP
-  - DOMAIN-SUFFIX,paypalbeacon.com,JP
-  - DOMAIN-SUFFIX,paypalbenefits.com,JP
-  - DOMAIN-SUFFIX,paypalbrasil.com,JP
-  - DOMAIN-SUFFIX,paypalcommunity.cn,JP
-  - DOMAIN-SUFFIX,paypalcommunity.com,JP
-  - DOMAIN-SUFFIX,paypalcommunity.net,JP
-  - DOMAIN-SUFFIX,paypalcommunity.org,JP
-  - DOMAIN-SUFFIX,paypalcorp.com,JP
-  - DOMAIN-SUFFIX,paypalcredit.com,JP
-  - DOMAIN-SUFFIX,paypalcreditcard.com,JP
-  - DOMAIN-SUFFIX,paypalgivingfund.org,JP
-  - DOMAIN-SUFFIX,paypalhere.cn,JP
-  - DOMAIN-SUFFIX,paypalhere.com,JP
-  - DOMAIN-SUFFIX,paypalhere.com.cn,JP
-  - DOMAIN-SUFFIX,paypalhere.info,JP
-  - DOMAIN-SUFFIX,paypalhere.net,JP
-  - DOMAIN-SUFFIX,paypalhere.org,JP
-  - DOMAIN-SUFFIX,paypalhere.tv,JP
-  - DOMAIN-SUFFIX,paypali.net,JP
-  - DOMAIN-SUFFIX,paypalinc.com,JP
-  - DOMAIN-SUFFIX,paypalindia.com,JP
-  - DOMAIN-SUFFIX,paypalinsuranceservices.org,JP
-  - DOMAIN-SUFFIX,paypall.com,JP
-  - DOMAIN-SUFFIX,paypallabs.com,JP
-  - DOMAIN-SUFFIX,paypalme.com,JP
-  - DOMAIN-SUFFIX,paypalnet.net,JP
-  - DOMAIN-SUFFIX,paypalnet.org,JP
-  - DOMAIN-SUFFIX,paypalnetwork.info,JP
-  - DOMAIN-SUFFIX,paypalnetwork.net,JP
-  - DOMAIN-SUFFIX,paypalnetwork.org,JP
-  - DOMAIN-SUFFIX,paypalobjects.com,JP
-  - DOMAIN-SUFFIX,paypalonline.net,JP
-  - DOMAIN-SUFFIX,paypalonline.org,JP
-  - DOMAIN-SUFFIX,paypalprepagata.com,JP
-  - DOMAIN-SUFFIX,paypalprepagata.net,JP
-  - DOMAIN-SUFFIX,paypalservice.com,JP
-  - DOMAIN-SUFFIX,paypalshopping.com,JP
-  - DOMAIN-SUFFIX,paypalshopping.net,JP
-  - DOMAIN-SUFFIX,paypalsurvey.com,JP
-  - DOMAIN-SUFFIX,paypalx.com,JP
-  - DOMAIN-SUFFIX,paypaly.com,JP
-  - DOMAIN-SUFFIX,payppal.com,JP
-  - DOMAIN-SUFFIX,payypal.com,JP
-  - DOMAIN-SUFFIX,pdncommunity.com,JP
-  - DOMAIN-SUFFIX,pp-soc.com,JP
-  - DOMAIN-SUFFIX,ppaypal.com,JP
-  - DOMAIN-SUFFIX,pppds.com,JP
-  - DOMAIN-SUFFIX,pypl.com,JP
-  - DOMAIN-SUFFIX,pypl.info,JP
-  - DOMAIN-SUFFIX,pypl.net,JP
-  - DOMAIN-SUFFIX,pypl.tv,JP
-  - DOMAIN-SUFFIX,s-xoom.com,JP
-  - DOMAIN-SUFFIX,secure-paypal.info,JP
-  - DOMAIN-SUFFIX,securepaypal.info,JP
-  - DOMAIN-SUFFIX,simility.com,JP
-  - DOMAIN-SUFFIX,sslpaypal.org,JP
-  - DOMAIN-SUFFIX,swiftbank.info,JP
-  - DOMAIN-SUFFIX,swiftbank.us,JP
-  - DOMAIN-SUFFIX,swiftcapital.com,JP
-  - DOMAIN-SUFFIX,swiftfinancial.com,JP
-  - DOMAIN-SUFFIX,swiftfinancial.info,JP
-  - DOMAIN-SUFFIX,swiftfinancial.net,JP
-  - DOMAIN-SUFFIX,thepaypalshop.com,JP
-  - DOMAIN-SUFFIX,theshoppingexpresslane.net,JP
-  - DOMAIN-SUFFIX,venmo-touch.com,JP
-  - DOMAIN-SUFFIX,venmo.com,JP
-  - DOMAIN-SUFFIX,venmo.info,JP
-  - DOMAIN-SUFFIX,venmo.net,JP
-  - DOMAIN-SUFFIX,venmo.org,JP
-  - DOMAIN-SUFFIX,venmo.s3.amazonaws.com,JP
-  - DOMAIN-SUFFIX,webmoneyinfo.com,JP
-  - DOMAIN-SUFFIX,wiremoneytoirelandwithxoomeasierandcheaper.com,JP
-  - DOMAIN-SUFFIX,www-paypal.info,JP
-  - DOMAIN-SUFFIX,www-paypal.us,JP
-  - DOMAIN-SUFFIX,wwwxoom.com,JP
-  - DOMAIN-SUFFIX,xn--bnq297cix3a.cn,JP
-  - DOMAIN-SUFFIX,xoom-experience.com,JP
-  - DOMAIN-SUFFIX,xoom.com,JP
-  - DOMAIN-SUFFIX,xoom.io,JP
-  - DOMAIN-SUFFIX,xoom.net.cn,JP
-  - DOMAIN-SUFFIX,xoom.us,JP
-  - DOMAIN-SUFFIX,xoomcom.com,JP
-  - DOMAIN-KEYWORD,paypal,JP
 # > other
   - DOMAIN-SUFFIX,cn,DIRECT
   - DOMAIN-KEYWORD,-cn,DIRECT
