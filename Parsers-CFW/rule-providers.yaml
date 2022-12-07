@@ -5,43 +5,43 @@ ADBlock: # 广告域名列表
   url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
   path: ./ruleset/reject.yaml
   interval: 86400
+#PC Gsmr
 MapleStory:
   type: http
   behavior: domain
   url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/MapleStory.yaml"
   path: ./ruleset/MapleStory.yaml
   interval: 86400
-
+Elsword: #Elsword
+  type: http
+  behavior: domain
+  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Elsword.yaml"
+  path: ./ruleset/Elsword.yaml
+  interval: 86400
 # JP severs
-JP: #Life-JP
+Life-JP: #Life-JP
   type: http
   behavior: domain
   url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Life-JP.yaml"
   path: ./ruleset/Life-JP.yaml
   interval: 86400
-JP: #Cygames-JP
+Cygames-JP: #Cygames-JP
   type: http
   behavior: domain
   url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Cygames-JP.yaml"
   path: ./ruleset/Cygames-JP.yaml
   interval: 86400
-JP: #Amazon
+Amazon: #Amazon
   type: http
   behavior: domain
   url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Amazon.yaml"
   path: ./ruleset/Amazon.yaml
   interval: 86400
-JP: #Games-JP
+Games-JP: #Games-JP
   type: http
   behavior: domain
   url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Games-JP.yaml"
   path: ./ruleset/Games-JP.yaml
-  interval: 86400
-JP: #Elsword
-  type: http
-  behavior: domain
-  url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Elsword.yaml"
-  path: ./ruleset/Elsword.yaml
   interval: 86400
 
 Steam:
@@ -51,19 +51,19 @@ Steam:
   path: ./ruleset/Steam.yaml
   interval: 86400
 # SNS
-留学:
+telegramcidr:
   type: http
   behavior: domain
   url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/telegramcidr.yaml"
   path: ./ruleset/telegramcidr.yaml
   interval: 86400
-留学:
+Line:
   type: http
   behavior: domain
   url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Line.yaml"
   path: ./ruleset/Line.yaml
   interval: 86400
-留学:
+Discord:
   type: http
   behavior: domain
   url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Discord.yaml"

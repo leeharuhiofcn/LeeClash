@@ -88,8 +88,27 @@ commands:
   - proxy-groups.USA.proxies=[]proxyNames|(美|USA)
   - proxy-groups.SEA.proxies=[]proxyNames|(MY|SG|马来|新加坡)
 #添加自定义规则
+prepend-rules: 
+# > Rule Set
+# >建议使用DOMAIN-SUFFIX，而不是DOMAIN，很多时候你不知道你的使用的服务的域名结构
+# > DIRECT of China
+  - RULE-SET,MapleStory,MapleStory
+  - RULE-SET,Elsword,Elsword
+  - RULE-SET,Life-JP,JP
+  - RULE-SET,Cygames-JP,JP
+  - RULE-SET,Amazon,JP  
+  - RULE-SET,Games-JP,JP
+  - RULE-SET,Steam,Steam
+  - RULE-SET,telegramcidr,留学
+  - RULE-SET,Line,留学
+  - RULE-SET,Discord,留学
+  - RULE-SET,Netflix,Netflix
+  - RULE-SET,ADBlocl,ADBlock
+  - GEOIP,CN,强国
+  - MATCH,选择模式
 mix-rule-providers:
   #以下放置于 rule-providers，注意对齐
+#以下放置于 rule-providers，注意对齐
   ADBlock: # 广告域名列表
     type: http
     behavior: domain
@@ -102,44 +121,38 @@ mix-rule-providers:
     url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/MapleStory.yaml"
     path: ./ruleset/MapleStory.yaml
     interval: 86400
-  Elsword:
+
+  Elsword: 
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Elsword.yaml"
     path: ./ruleset/Elsword.yaml
     interval: 86400
   # JP severs
-  JP: #Life-JP
+  Life-JP: 
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Life-JP.yaml"
     path: ./ruleset/Life-JP.yaml
     interval: 86400
-  JP: #Cygames-JP
+  Cygames-JP: 
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Cygames-JP.yaml"
     path: ./ruleset/Cygames-JP.yaml
     interval: 86400
-  JP: #Amazon
+  Amazon:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Amazon.yaml"
     path: ./ruleset/Amazon.yaml
     interval: 86400
-  JP: #Games-JP
+  Games-JP:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Games-JP.yaml"
     path: ./ruleset/Games-JP.yaml
     interval: 86400
-  JP: #Elsword
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Elsword.yaml"
-    path: ./ruleset/Elsword.yaml
-    interval: 86400
-
   Steam:
     type: http
     behavior: domain
@@ -147,19 +160,19 @@ mix-rule-providers:
     path: ./ruleset/Steam.yaml
     interval: 86400
   # SNS
-  留学:
+  telegramcidr:
     type: http
-    behavior: domain
+    behavior: ipcidr
     url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/telegramcidr.yaml"
     path: ./ruleset/telegramcidr.yaml
     interval: 86400
-  留学:
+  Line:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Line.yaml"
     path: ./ruleset/Line.yaml
     interval: 86400
-  留学:
+  Discord:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Discord.yaml"
@@ -172,98 +185,3 @@ mix-rule-providers:
     url: "https://cdn.jsdelivr.net/gh/leeharuhiofcn/LeeClash@main/rule-providers/Netflix.yaml"
     path: ./ruleset/Netflix.yaml
     interval: 86400
-prepend-rules: 
-# > Rule Set
-# >建议使用DOMAIN-SUFFIX，而不是DOMAIN，很多时候你不知道你的使用的服务的域名结构
-# > DIRECT of China
-  - DOMAIN-KEYWORD,agefans,DIRECT
-  - DOMAIN-KEYWORD,nga.178.com,DIRECT
-  - DOMAIN-KEYWORD,dogess,留学
-# > www.dmhy.org
-  - DOMAIN-SUFFIX,dmhy.org,All-PROXY  
-  - DOMAIN-SUFFIX,instructables.com,All-PROXY
-# > other
-  - DOMAIN-SUFFIX,cn,DIRECT
-  - DOMAIN-KEYWORD,-cn,DIRECT
-  - DOMAIN,p-bstarstatic.akamaized.net,强国
-  - DOMAIN,p.bstarstatic.com,强国
-  - DOMAIN,upos-bstar-mirrorakam.akamaized.net,强国
-  - DOMAIN,upos-bstar1-mirrorakam.akamaized.net,强国
-  - DOMAIN,upos-hz-mirrorakam.akamaized.net,强国
-  - DOMAIN-SUFFIX,acgvideo.com,强国
-  - DOMAIN-SUFFIX,bilibili.com,强国
-  - DOMAIN-SUFFIX,bilibili.tv,强国
-  - IP-CIDR,45.43.32.234/32,强国
-  - IP-CIDR,119.29.29.29/32,强国
-  - IP-CIDR,128.1.62.200/32,强国
-  - IP-CIDR,128.1.62.201/32,强国
-  - IP-CIDR,150.116.92.250/32,强国
-  - IP-CIDR,164.52.76.18/32,强国
-  - IP-CIDR,203.107.1.33/32,强国
-  - IP-CIDR,203.107.1.34/32,强国
-  - IP-CIDR,203.107.1.65/32,强国
-  - IP-CIDR,203.107.1.66/32,强国
-  - DOMAIN,apiintl.biliapi.net,强国
-  - DOMAIN,upos-hz-mirrorakam.akamaized.net,强国
-  - DOMAIN-SUFFIX,acg.tv,强国
-  - DOMAIN-SUFFIX,acgvideo.com,强国
-  - DOMAIN-SUFFIX,b23.tv,强国
-  - DOMAIN-SUFFIX,bigfun.cn,强国
-  - DOMAIN-SUFFIX,bigfunapp.cn,强国
-  - DOMAIN-SUFFIX,biliapi.com,强国
-  - DOMAIN-SUFFIX,biliapi.net,强国
-  - DOMAIN-SUFFIX,bilibili.com,强国
-  - DOMAIN-SUFFIX,bilibili.tv,强国
-  - DOMAIN-SUFFIX,biligame.com,强国
-  - DOMAIN-SUFFIX,biligame.net,强国
-  - DOMAIN-SUFFIX,bilivideo.cn,强国
-  - DOMAIN-SUFFIX,bilivideo.com,强国
-  - DOMAIN-SUFFIX,hdslb.com,强国
-  - DOMAIN-SUFFIX,im9.com,强国
-  - DOMAIN-SUFFIX,smtcdns.net,强国
-  - PROCESS-NAME,v2ray,强国
-  - PROCESS-NAME,xray,强国
-  - PROCESS-NAME,naive,强国
-  - PROCESS-NAME,trojan,强国
-  - PROCESS-NAME,trojan-go,强国
-  - PROCESS-NAME,ss-local,强国
-  - PROCESS-NAME,privoxy,强国
-  - PROCESS-NAME,leaf,强国
-  - PROCESS-NAME,v2ray.exe,强国
-  - PROCESS-NAME,xray.exe,强国
-  - PROCESS-NAME,naive.exe,强国
-  - PROCESS-NAME,trojan.exe,强国
-  - PROCESS-NAME,trojan-go.exe,强国
-  - PROCESS-NAME,ss-local.exe,强国
-  - PROCESS-NAME,privoxy.exe,强国
-  - PROCESS-NAME,leaf.exe,强国
-  - PROCESS-NAME,Surge,强国
-  - PROCESS-NAME,Surge 2,强国
-  - PROCESS-NAME,Surge 3,强国
-  - PROCESS-NAME,Surge 4,强国
-  - PROCESS-NAME,Surge%202,强国
-  - PROCESS-NAME,Surge%203,强国
-  - PROCESS-NAME,Surge%204,强国
-  - PROCESS-NAME,Thunder,强国
-  - PROCESS-NAME,DownloadService,强国
-  - PROCESS-NAME,qBittorrent,强国
-  - PROCESS-NAME,Transmission,强国
-  - PROCESS-NAME,fdm,强国
-  - PROCESS-NAME,aria2c,强国
-  - PROCESS-NAME,Folx,强国
-  - PROCESS-NAME,NetTransport,强国
-  - PROCESS-NAME,uTorrent,强国
-  - PROCESS-NAME,WebTorrent,强国
-  - PROCESS-NAME,aria2c.exe,强国
-  - PROCESS-NAME,BitComet.exe,强国
-  - PROCESS-NAME,fdm.exe,强国
-  - PROCESS-NAME,NetTransport.exe,强国
-  - PROCESS-NAME,qbittorrent.exe,强国
-  - PROCESS-NAME,Thunder.exe,强国
-  - PROCESS-NAME,ThunderVIP.exe,强国
-  - PROCESS-NAME,transmission-daemon.exe,强国
-  - PROCESS-NAME,transmission-qt.exe,强国
-  - PROCESS-NAME,uTorrent.exe,强国
-  - PROCESS-NAME,WebTorrent.exe,强国
-  - GEOIP,CN,强国
-  - MATCH,选择模式
