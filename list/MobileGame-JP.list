@@ -1,0 +1,95 @@
+# > プリンセスコネクト ReDive(JP)
+# > PassWall Need Origin JP ip
+# > behavior: classical
+# Login
+DOMAIN,api-common01.cygames.jp
+# info
+DOMAIN,app-info.priconne-redive.jp
+# Main
+DOMAIN,api-priconne-redive.cygames.jp
+# Akamai Technologies
+IP-CIDR,23.59.209.33/32
+#cygames
+DOMAIN-SUFFIX,cygames.jp
+DOMAIN-KEYWORD,priconne-redive
+# > ウマ娘(JP)
+# Login
+# - DOMAIN,api-common01.cygames.jp
+# Main
+DOMAIN,api-umamusume.cygames.jp
+DOMAIN,prd-info-umamusume.akamaized.net
+#cygames
+DOMAIN-SUFFIX,cygames.jp
+DOMAIN-KEYWORD,umamusume
+
+# > Amazon CloudFront
+#MLTD
+DOMAIN,d2sf4w9bkv485c.cloudfront.net
+#CGSS
+DOMAIN,asset-starlight-stage.akamaized.net
+DOMAIN,a1915.dscw7.akamai.net
+#Umamusume
+DOMAIN,a1991.dscw7.akamai.net
+DOMAIN,prd-storage-umamusume.akamaized.net
+#PCR 在主页面可下载数据
+DOMAIN,a1902.dscw7.akamai.net
+DOMAIN,prd-priconne-redive.akamaized.net
+#TouHou
+DOMAIN,a1790.dscd.akamai.net
+DOMAIN,assets-danmakujp.cdn-dena.com
+# cygames shadowverse pc
+DOMAIN,shadowverse.akamaized.net
+#Mach akamai
+DOMAIN-SUFFIX,akamai.net
+DOMAIN-SUFFIX,akamaiedge.net
+DOMAIN-SUFFIX,akamaihd.net
+DOMAIN-SUFFIX,akamaistream.net
+DOMAIN-SUFFIX,akamaized.net
+# Yugioh master duel
+DOMAIN,konami.net
+DOMAIN,d2z2594camlaoa.cloudfront.net
+
+# CGSS
+DOMAIN-SUFFIX,starlight-stage.jp
+# Poplinks
+DOMAIN,game.connect-puzzle.com
+DOMAIN-SUFFIX,connect-puzzle
+DOMAIN,a1915.d.akamai.net
+DOMAIN,cdn-connect-puzzle.akamaized.net
+# Shinycolors
+DOMAIN,api.shinycolors.enza.fun
+DOMAIN,platform-sdk.enza.fun
+DOMAIN,server-status.enza.fun
+DOMAIN,sdk.enza.fun
+DOMAIN,shinycolors.enza.fun
+DOMAIN-SUFFIX,enza.fun
+DOMAIN-KEYWORD,shinycolors
+# Theaterdays
+DOMAIN,theaterdays.appspot.com
+DOMAIN-KEYWORD,theaterdays
+# BlueArchive
+DOMAIN-SUFFIX,yostar-serverinfo.bluearchiveyostar.com
+DOMAIN-SUFFIX,ba-jp-sdk.bluearchive.jp
+DOMAIN-SUFFIX,prod-notice.bluearchiveyostar.com
+DOMAIN-SUFFIX,prod-gateway.bluearchiveyostar.com
+DOMAIN-SUFFIX,prod-game.bluearchiveyostar.com
+DOMAIN-SUFFIX,prod-clientpatch.bluearchiveyostar.com
+DOMAIN-KEYWORD,bluearchiveyostar
+# Granbluefantasy
+DOMAIN-SUFFIX,granbluefantasy.jp
+DOMAIN-SUFFIX,andapp.jp
+DOMAIN-SUFFIX,mbga.jp
+DOMAIN-SUFFIX,mobage.jp
+# 東方ダンマクカグラ
+DOMAIN,danmakujp4-v1.lcx.tokyo
+DOMAIN,player-api-production.danmakujp-server.com
+# - DOMAIN,assets-danmakujp.cdn-dena.com
+DOMAIN-KEYWORD,danmakujp
+# > BanG Dream!
+DOMAIN-SUFFIX,star.craftegg.jp
+DOMAIN-SUFFIX,ns.exitgames.com
+# Party Match
+IP-CIDR,5.8.70.143/32
+IP-CIDR,20.89.104.232/32
+# Yugioh master duel
+DOMAIN-SUFFIX,konami.net
