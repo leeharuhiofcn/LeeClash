@@ -1,0 +1,215 @@
+# Gmae of Japan
+
+# hangame
+DOMAIN-SUFFIX,hangame.co.jp
+DOMAIN-SUFFIX,hange.jp
+# elsword
+DOMAIN-SUFFIX,elsword.com
+DOMAIN-SUFFIX,hange.jp
+DOMAIN-SUFFIX,playkog.com
+DOMAIN-SUFFIX,jp-live-gs.elsword.playkog.com
+DOMAIN-SUFFIX,elsword-jp.dn.playkog.com
+PROCESS-NAME,elsword.exe
+# ncsoft
+DOMAIN-SUFFIX,ncsoft.jp
+# DMM
+DOMAIN-SUFFIX,dmm.co.jp
+DOMAIN-SUFFIX,dmm.com
+DOMAIN-SUFFIX,dmmgames.com
+DOMAIN-SUFFIX,dmm.hk
+DOMAIN-SUFFIX,dmm-extension.com
+# cygames shadowverse
+DOMAIN-SUFFIX,shadowverse.com
+DOMAIN-SUFFIX,shadowverse.jp
+DOMAIN-SUFFIX,colorfulpalette.org
+# KTV DAM
+DOMAIN-SUFFIX,clubdam.com
+
+# > プリンセスコネクト ReDive(JP)
+# > PassWall Need Origin JP ip
+# > behavior: classical
+# Login
+DOMAIN,api-common01.cygames.jp
+# info
+DOMAIN,app-info.priconne-redive.jp
+# Main
+DOMAIN,api-priconne-redive.cygames.jp
+# Akamai Technologies
+IP-CIDR,23.59.209.33/32
+#cygames
+DOMAIN-SUFFIX,cygames.jp
+DOMAIN-KEYWORD,priconne-redive
+# > ウマ娘(JP)
+# Login
+# - DOMAIN,api-common01.cygames.jp
+# Main
+DOMAIN,api-umamusume.cygames.jp
+DOMAIN,prd-info-umamusume.akamaized.net
+#cygames
+DOMAIN-SUFFIX,cygames.jp
+DOMAIN-KEYWORD,umamusume
+
+# > Amazon CloudFront
+#MLTD
+DOMAIN,d2sf4w9bkv485c.cloudfront.net
+#CGSS
+DOMAIN,asset-starlight-stage.akamaized.net
+DOMAIN,a1915.dscw7.akamai.net
+#Umamusume
+DOMAIN,a1991.dscw7.akamai.net
+DOMAIN,prd-storage-umamusume.akamaized.net
+#PCR 在主页面可下载数据
+DOMAIN,a1902.dscw7.akamai.net
+DOMAIN,prd-priconne-redive.akamaized.net
+#TouHou
+DOMAIN,a1790.dscd.akamai.net
+DOMAIN,assets-danmakujp.cdn-dena.com
+# cygames shadowverse pc
+DOMAIN,shadowverse.akamaized.net
+#Mach akamai
+#DOMAIN-SUFFIX,akamai.net
+#DOMAIN-SUFFIX,akamaiedge.net
+#DOMAIN-SUFFIX,akamaihd.net
+#DOMAIN-SUFFIX,akamaistream.net
+#DOMAIN-SUFFIX,akamaized.net
+# Yugioh master duel
+#DOMAIN,konami.net
+DOMAIN,d2z2594camlaoa.cloudfront.net
+
+# CGSS
+DOMAIN-SUFFIX,starlight-stage.jp
+# Poplinks
+DOMAIN,game.connect-puzzle.com
+DOMAIN-SUFFIX,connect-puzzle
+DOMAIN,a1915.d.akamai.net
+DOMAIN,cdn-connect-puzzle.akamaized.net
+# Shinycolors
+DOMAIN,api.shinycolors.enza.fun
+DOMAIN,platform-sdk.enza.fun
+DOMAIN,server-status.enza.fun
+DOMAIN,sdk.enza.fun
+DOMAIN,shinycolors.enza.fun
+DOMAIN-SUFFIX,enza.fun
+DOMAIN-KEYWORD,shinycolors
+# Theaterdays
+DOMAIN,theaterdays.appspot.com
+DOMAIN-KEYWORD,theaterdays
+# BlueArchive
+DOMAIN-SUFFIX,yostar-serverinfo.bluearchiveyostar.com
+DOMAIN-SUFFIX,ba-jp-sdk.bluearchive.jp
+DOMAIN-SUFFIX,prod-notice.bluearchiveyostar.com
+DOMAIN-SUFFIX,prod-gateway.bluearchiveyostar.com
+DOMAIN-SUFFIX,prod-game.bluearchiveyostar.com
+DOMAIN-SUFFIX,prod-clientpatch.bluearchiveyostar.com
+DOMAIN-KEYWORD,bluearchiveyostar
+# Granbluefantasy
+DOMAIN-SUFFIX,granbluefantasy.jp
+DOMAIN-SUFFIX,andapp.jp
+DOMAIN-SUFFIX,mbga.jp
+DOMAIN-SUFFIX,mobage.jp
+# 東方ダンマクカグラ
+DOMAIN,danmakujp4-v1.lcx.tokyo
+DOMAIN,player-api-production.danmakujp-server.com
+# - DOMAIN,assets-danmakujp.cdn-dena.com
+DOMAIN-KEYWORD,danmakujp
+# > BanG Dream!
+DOMAIN-SUFFIX,star.craftegg.jp
+DOMAIN-SUFFIX,ns.exitgames.com
+# Party Match
+IP-CIDR,5.8.70.143/32
+IP-CIDR,20.89.104.232/32
+# Yugioh master duel
+DOMAIN-SUFFIX,konami.net
+
+#TMS
+DOMAIN-SUFFIX,beanfun.com
+DOMAIN-SUFFIX,nexon.co.jp
+DOMAIN-SUFFIX,nexoncdn.co.kr
+#### GMSR
+DOMAIN-SUFFIX,nexon.com
+DOMAIN-SUFFIX,nexon.io
+DOMAIN-SUFFIX,nexon.net
+# maplesea
+DOMAIN-SUFFIX,maplesea.com
+DOMAIN-SUFFIX,playpark.com
+# Login
+DST-PORT,8484
+# Channel port
+DST-PORT,8585
+DST-PORT,8586
+DST-PORT,8787
+DST-PORT,8788
+# Reboot channel
+IP-CIDR,18.182.188.187/32
+IP-CIDR,52.199.72.131/32
+IP-CIDR,13.115.144.95/32
+IP-CIDR,18.182.217.117/32
+IP-CIDR,18.179.116.166/32
+# Kaede channel
+IP-CIDR,18.182.127.91/32
+IP-CIDR,52.198.200.225/32
+IP-CIDR,18.182.247.65/32
+IP-CIDR,52.192.143.131/32
+IP-CIDR,52.194.137.165/32
+IP-CIDR,54.64.122.179/32
+IP-CIDR,18.179.225.221/32
+IP-CIDR,3.113.72.83/32
+IP-CIDR,13.113.189.117/32
+IP-CIDR,52.68.74.83/32
+# > EXE
+PROCESS-NAME,MapleStory.exe
+
+# ヤフオク
+DOMAIN-SUFFIX,yahoo.co.jp
+# メルカリ
+DOMAIN-SUFFIX,jp.mercari.com
+DOMAIN-KEYWORD,mercari
+# アマゾン
+DOMAIN-SUFFIX,amazon.co.jp
+DOMAIN-SUFFIX,amazonpayments.com
+DOMAIN-SUFFIX,ssl-images-amazon.com
+# 駿河屋
+DOMAIN-SUFFIX,suruga-ya.jp
+# ツタヤ
+DOMAIN-SUFFIX,tsutaya.co.jp
+# ソニー
+DOMAIN-SUFFIX,sony.jp
+# BOOKOFF
+DOMAIN-SUFFIX,bookoffonline.co.jp
+# Bank
+# > 楽天銀行
+DOMAIN-SUFFIX,rakuten-card.co.jp
+DOMAIN-SUFFIX,member.id.rakuten.co.jp
+DOMAIN-SUFFIX,rakuten-static.com
+DOMAIN-SUFFIX,rakuten.co.jp
+DOMAIN-SUFFIX,rakuten.com
+DOMAIN-KEYWORD,rakuten
+# > 三井住友銀行
+DOMAIN-SUFFIX,smbc.co.jp
+DOMAIN-SUFFIX,smbc-card.com
+DOMAIN-KEYWORD,smbc
+# > 旧 ジャパンネット銀行
+DOMAIN-SUFFIX,paypay-bank.co.jp
+DOMAIN-KEYWORD,paypay-bank
+DOMAIN-SUFFIX,paypay.ne.jp
+DOMAIN-SUFFIX,yahoo.co.jp
+DOMAIN-KEYWORD,paypay
+DOMAIN-KEYWORD,yahoojapanshopping
+# > ゆうちょ銀行
+DOMAIN-SUFFIX,jp-bank.japanpost.jp
+DOMAIN-KEYWORD,japanpost
+# > 三菱UFJ
+DOMAIN-SUFFIX,bk.mufg.jp
+# > みずほ銀行
+DOMAIN-SUFFIX,mizuhobank.co.jp
+DOMAIN-KEYWORD,mizuho
+# > E net
+DOMAIN-SUFFIX,enetcom.co.jp
+# > 勉強サイト
+DOMAIN-SUFFIX,excel-ubara.com
+DOMAIN-SUFFIX,officetanaka.net
+DOMAIN-SUFFIX,sakura-paris.org
+# > 素材サイト
+DOMAIN-SUFFIX,happylilac.net
+DOMAIN-SUFFIX,print-kids.net
+DOMAIN-SUFFIX,clubdam.com
